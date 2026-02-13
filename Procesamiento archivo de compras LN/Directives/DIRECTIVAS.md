@@ -30,3 +30,14 @@ Este documento resume las reglas de negocio y directivas para el procesamiento d
     - El **Total** calculado no coincida con el `IMP_TOTAL` original del archivo de entrada.
     - La suma del **IVA** calculado (21% + 10.5% + 27%) no coincida con el `IMP_IVA` original (para las alícuotas correspondientes).
 - Se permite una tolerancia mínima (0.02) por diferencias de redondeo.
+
+## 6. Ejecución del Script
+El script `transform_excel.py` soporta argumentos de línea de comandos para especificar las rutas de entrada y salida de forma dinámica.
+
+### Uso Básico (Rutas Default)
+Ejecutar sin argumentos utilizará las rutas por defecto configuradas en el código:
+`python transform_excel.py`
+
+### Uso Avanzado (Argumentos)
+Puede especificar rutas personalizadas usando `--input` y `--output`:
+`python transform_excel.py --input "ruta/al/archivo.xlsx" --output "ruta/destino.xlsx"`
