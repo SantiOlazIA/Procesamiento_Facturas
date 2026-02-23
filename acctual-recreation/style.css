@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --one-if-corner-shape-supported: 1;
+  --token-1822648e-5316-4fbf-8031-cdd7a6a80848: #000000e6;
+  --token-8c2257fb-8bb0-4d60-9c2c-a72b1c0cbe60: #666;
+  --token-8f430da9-3316-41fc-b43a-4e8c8d4a9c6d: #f7fafc;
+  --token-56f66afe-75f9-4c9e-ae81-8e972ebfc474: #004370;
+  --token-b044a602-6f67-4668-a1b5-c26e9556032c: #000000e6;
+  --token-bf766dde-3bf1-4c2a-930d-8860e63001db: #666;
+  --framer-will-change-override: none;
+  --framer-will-change-filter-override: none;
+  --framer-aspect-ratio-supported: auto;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+  -webkit-font-smoothing: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--token-8f430da9-3316-41fc-b43a-4e8c8d4a9c6d);
+  color: var(--token-1822648e-5316-4fbf-8031-cdd7a6a80848);
+}

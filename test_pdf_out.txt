@@ -1,0 +1,1057 @@
+
+============================================================
+PAGE 2
+============================================================
+  [000] FECHA CONC.
+  [001] FECHA LIQ.
+  [002] TIPO DE OPERACION
+  [003] N° COMP
+  [004] ESPECIE
+  [005] CANTIDAD
+  [006] PRECIO
+  [007] IMPORTE
+  [008] SALDO
+  [009] LD (**)
+  [010] SALDO INICIAL
+  [011] 0.08
+  [012] 02/06/2025
+  [013] 02/06/2025
+  [014] RECIBO EN PESOS
+  [015] 73,609
+  [016] 0
+  [017] 0.00
+  [018] 200,000,000.00
+  [019] 200,000,000.08
+  [020] 02/06/2025
+  [021] 02/06/2025
+  [022] DEBITO POR SUSCRIPCION DE FONDOS
+  [023] 81,890
+  [024] MVIJ
+  [025] (200,000,000.00)
+  [026] 0.08
+  [027] 02/06/2025
+  [028] 02/06/2025
+  [029] RECIBO EN PESOS
+  [030] 73,610
+  [031] 0
+  [032] 0.00
+  [033] 760,000,000.00
+  [034] 760,000,000.08
+  [035] 02/06/2025
+  [036] 02/06/2025
+  [037] SUSCRIPCION INMEDIATO
+  [038] 974,467
+  [039] SA$
+  [040] 69,828,847.66
+  [041] 10.88
+  [042] (760,000,000.00)
+  [043] 0.08
+  [044] SALDO al 02/06/2025
+  [045] 0.08
+  [046] 03/06/2025
+  [047] 03/06/2025
+  [048] COMP PAGO EN PESOS
+  [049] 53,266
+  [050] 0
+  [051] (100,000,000.00)
+  [052] (99,999,999.92)
+  [053] 03/06/2025
+  [054] 03/06/2025
+  [055] RESCATE INMEDIATO
+  [056] 975,387
+  [057] SA$
+  [058] (9,181,439.76)
+  [059] 10.89
+  [060] 100,000,000.00
+  [061] 0.08
+  [062] 03/06/2025
+  [063] 03/06/2025
+  [064] RECIBO EN PESOS
+  [065] 74,705
+  [066] 0
+  [067] 0.00
+  [068] 248,000,000.00
+  [069] 248,000,000.08
+  [070] 03/06/2025
+  [071] 03/06/2025
+  [072] SUSCRIPCION INMEDIATO
+  [073] 975,506
+  [074] SA$
+  [075] 22,769,970.60
+  [076] 10.89
+  [077] (248,000,000.00)
+  [078] 0.08
+  [079] SALDO al 03/06/2025
+  [080] 0.08
+  [081] 04/06/2025
+  [082] 04/06/2025
+  [083] COMP PAGO EN PESOS
+  [084] 53,542
+  [085] 0
+  [086] (30,000,000.00)
+  [087] (29,999,999.92)
+  [088] 04/06/2025
+  [089] 04/06/2025
+  [090] RESCATE INMEDIATO
+  [091] 975,961
+  [092] SA$
+  [093] (2,752,470.85)
+  [094] 10.90
+  [095] 30,000,000.00
+  [096] 0.08
+  [097] 04/06/2025
+  [098] 04/06/2025
+  [099] RECIBO EN PESOS
+  [100] 75,478
+  [101] 0
+  [102] 0.00
+  [103] 91,000,000.00
+  [104] 91,000,000.08
+  [105] 04/06/2025
+  [106] 04/06/2025
+  [107] SUSCRIPCION INMEDIATO
+  [108] 976,182
+  [109] SA$
+  [110] 8,349,161.57
+  [111] 10.90
+  [112] (91,000,000.00)
+  [113] 0.08
+  [114] SALDO al 04/06/2025
+  [115] 0.08
+  [116] 05/06/2025
+  [117] 05/06/2025
+  [118] COMP PAGO EN PESOS
+  [119] 54,005
+  [120] 0
+  [121] (3,000,000.00)
+  [122] (2,999,999.92)
+  [123] 05/06/2025
+  [124] 05/06/2025
+  [125] RESCATE INMEDIATO
+  [126] 976,658
+  [127] SA$
+  [128] (275,050.93)
+  [129] 10.91
+  [130] 3,000,000.00
+  [131] 0.08
+  [132] 05/06/2025
+  [133] 05/06/2025
+  [134] COMP PAGO EN PESOS
+  [135] 54,019
+  [136] 0
+  [137] (3,000,000.00)
+  [138] (2,999,999.92)
+  [139] 05/06/2025
+  [140] 05/06/2025
+  [141] RESCATE INMEDIATO
+  [142] 976,671
+  [143] SA$
+  [144] (275,050.93)
+  [145] 10.91
+  [146] 3,000,000.00
+  [147] 0.08
+  [148] SALDO al 05/06/2025
+  [149] 0.08
+  [150] 06/06/2025
+  [151] 06/06/2025
+  [152] RECIBO EN PESOS
+  [153] 76,628
+  [154] 0
+  [155] 0.00
+  [156] 53,000,000.00
+  [157] 53,000,000.08
+  [158] 06/06/2025
+  [159] 06/06/2025
+  [160] SUSCRIPCION INMEDIATO
+  [161] 977,538
+  [162] SA$
+  [163] 4,855,757.88
+  [164] 10.91
+  [165] (53,000,000.00)
+  [166] 0.08
+  [167] 06/06/2025
+  [168] 06/06/2025
+  [169] RECIBO EN PESOS
+  [170] 76,629
+  [171] 0
+  [172] 0.00
+  [173] 100,000,000.00
+  [174] 100,000,000.08
+  [175] 06/06/2025
+  [176] 06/06/2025
+  [177] DEBITO POR SUSCRIPCION DE FONDOS
+  [178] 84,851
+  [179] MVIJ
+  [180] (100,000,000.00)
+  [181] 0.08
+  [182] SALDO al 06/06/2025
+  [183] 0.08
+  [184] 09/06/2025
+  [185] 09/06/2025
+  [186] RECIBO EN PESOS
+  [187] 77,263
+  [188] 0
+  [189] 0.00
+  [190] 94,000,000.00
+  [191] 94,000,000.08
+  [192] 09/06/2025
+  [193] 09/06/2025
+  [194] SUSCRIPCION INMEDIATO
+  [195] 978,385
+  [196] SA$
+  [197] 8,593,760.07
+  [198] 10.94
+  [199] (94,000,000.00)
+  [200] 0.08
+  [201] SALDO al 09/06/2025
+  [202] 0.08
+  [203] 10/06/2025
+  [204] 10/06/2025
+  [205] COMP PAGO EN PESOS
+  [206] 55,883
+  [207] 0
+  [208] (245,000,000.00)
+  [209] (244,999,999.92)
+  [210] 10/06/2025
+  [211] 10/06/2025
+  [212] RESCATE INMEDIATO
+  [213] 979,089
+  [214] SA$
+  [215] (22,382,497.14)
+  [216] 10.95
+  [217] 245,000,000.00
+  [218] 0.08
+  [219] SALDO al 10/06/2025
+  [220] 0.08
+  [221] 11/06/2025
+  [222] 11/06/2025
+  [223] COMP PAGO EN PESOS
+  [224] 56,592
+  [225] 0
+  [226] (19,000,000.00)
+  [227] (18,999,999.92)
+  [228] 11/06/2025
+  [229] 11/06/2025
+  [230] RESCATE INMEDIATO
+  [231] 980,100
+  [232] SA$
+  [233] (1,734,523.03)
+  [234] 10.95
+  [235] 19,000,000.00
+  [236] 0.08
+  [237] SALDO al 11/06/2025
+  [238] 0.08
+  [239] 13/06/2025
+  [240] 13/06/2025
+  [241] COMP PAGO EN PESOS
+  [242] 57,427
+  [243] 0
+  [244] (24,000,000.00)
+  [245] (23,999,999.92)
+  [246] 13/06/2025
+  [247] 13/06/2025
+  [248] RESCATE INMEDIATO
+  [249] 981,441
+  [250] SA$
+  [251] (2,187,638.29)
+  [252] 10.97
+  [253] 24,000,000.00
+  [254] 0.08
+  [255] 13/06/2025
+  [256] 13/06/2025
+  [257] RECIBO EN PESOS
+  [258] 80,327
+  [259] 0
+  [260] 0.00
+  [261] 46,000,000.00
+  [262] 46,000,000.08
+  [263] 13/06/2025
+  [264] 13/06/2025
+  [265] SUSCRIPCION INMEDIATO
+  [266] 981,805
+  [267] SA$
+  [268] 4,192,973.40
+  [269] 10.97
+  [270] (46,000,000.00)
+  [271] 0.08
+  [272] DETALLE POR FECHA DE LIQUIDACION (*)
+  [273] PERIODO:
+  [274] 01/06/2025 - 30/06/2025
+  [275] CUENTA COMITENTE EN PESOS (*)
+  [276] (*) S.E.U.O. - Salvo error u omisión
+  [277] (**) LD - Libre Disponibilidad
+  [278] (**) B  - Bloqueado
+  [279] (**) GTIA  - Garantía
+  [280] Santander Valores S.A. se encuentra inscripta ante Bolsas y Mercados Argentinos S.A. bajo el N°152. - CUIT: 33-64595126-9.
+  [281] Santander Valores S.A.
+  [282] Santander Valores S.A. Agente de Liquidación y Compensación Propio N°252 y Agente de Colocación y Distribución Integral de Fondos Comunes de Inversión N° 144 en CNV; registrada 
+  [283] en IGJ bajo Número Correlativo 6916. Domicilio: Av. Juan de Garay 151 Piso 9
+  [284] Página 2 de 7
+  [285] Conforme las reglamentaciones de los Mercados, la documentación de respaldo de cada operación se encuentra a disposición del cliente.
+  [286] Es Agente de Liquidación y Compensación Propio registrado bajo el N°252 en CNV, y Agente de Compensación y Distribución Integral de Fondos Comunes de Inversión N°144.
+  [287] Sociedad Inscripta en la IGJ el día 9/9/1991 bajo el número 6919, libro 110, tomo A de Sociedades Anónimas. 
+  [288] CATERWEST SA
+  [289] RUTA 40 KM 3451  
+  [290] 5427 - VILLA ABERASTSAN JUAN
+  [291] CUENTA COMITENTE N°
+  [292] CUIT:
+  [293] IVA:
+  [294] 8028
+  [295] 30-70737152-4
+  [296] INSC.CON PERCEPCION
+  [297] 
+
+============================================================
+PAGE 3
+============================================================
+  [000] FECHA CONC.
+  [001] FECHA LIQ.
+  [002] TIPO DE OPERACION
+  [003] N° COMP
+  [004] ESPECIE
+  [005] CANTIDAD
+  [006] PRECIO
+  [007] IMPORTE
+  [008] SALDO
+  [009] SALDO al 13/06/2025
+  [010] 0.08
+  [011] 17/06/2025
+  [012] 17/06/2025
+  [013] COMP PAGO EN PESOS
+  [014] 57,871
+  [015] 0
+  [016] (270,000,000.00)
+  [017] (269,999,999.92)
+  [018] 17/06/2025
+  [019] 17/06/2025
+  [020] RESCATE INMEDIATO
+  [021] 982,140
+  [022] SA$
+  [023] (24,538,617.19)
+  [024] 11.00
+  [025] 270,000,000.00
+  [026] 0.08
+  [027] 17/06/2025
+  [028] 17/06/2025
+  [029] RECIBO EN PESOS
+  [030] 80,945
+  [031] 0
+  [032] 0.00
+  [033] 137,000,000.00
+  [034] 137,000,000.08
+  [035] 17/06/2025
+  [036] 17/06/2025
+  [037] SUSCRIPCION INMEDIATO
+  [038] 982,620
+  [039] SA$
+  [040] 12,451,076.13
+  [041] 11.00
+  [042] (137,000,000.00)
+  [043] 0.08
+  [044] SALDO al 17/06/2025
+  [045] 0.08
+  [046] 18/06/2025
+  [047] 18/06/2025
+  [048] COMP PAGO EN PESOS
+  [049] 58,546
+  [050] 0
+  [051] (55,000,000.00)
+  [052] (54,999,999.92)
+  [053] 18/06/2025
+  [054] 18/06/2025
+  [055] RESCATE INMEDIATO
+  [056] 983,150
+  [057] SA$
+  [058] (4,994,759.14)
+  [059] 11.01
+  [060] 55,000,000.00
+  [061] 0.08
+  [062] 18/06/2025
+  [063] 18/06/2025
+  [064] RECIBO EN PESOS
+  [065] 81,620
+  [066] 0
+  [067] 0.00
+  [068] 594,000,000.00
+  [069] 594,000,000.08
+  [070] 18/06/2025
+  [071] 18/06/2025
+  [072] SUSCRIPCION INMEDIATO
+  [073] 983,321
+  [074] SA$
+  [075] 53,943,398.66
+  [076] 11.01
+  [077] (594,000,000.00)
+  [078] 0.08
+  [079] SALDO al 18/06/2025
+  [080] 0.08
+  [081] 19/06/2025
+  [082] 19/06/2025
+  [083] COMP PAGO EN PESOS
+  [084] 59,421
+  [085] 0
+  [086] (10,000,000.00)
+  [087] (9,999,999.92)
+  [088] 19/06/2025
+  [089] 19/06/2025
+  [090] COMP PAGO EN PESOS
+  [091] 59,422
+  [092] 0
+  [093] (10,000,000.00)
+  [094] (19,999,999.92)
+  [095] 19/06/2025
+  [096] 19/06/2025
+  [097] RESCATE INMEDIATO
+  [098] 984,398
+  [099] SA$
+  [100] (907,433.11)
+  [101] 11.02
+  [102] 10,000,000.00
+  [103] (9,999,999.92)
+  [104] 19/06/2025
+  [105] 19/06/2025
+  [106] RESCATE INMEDIATO
+  [107] 984,400
+  [108] SA$
+  [109] (907,433.11)
+  [110] 11.02
+  [111] 10,000,000.00
+  [112] 0.08
+  [113] SALDO al 19/06/2025
+  [114] 0.08
+  [115] 23/06/2025
+  [116] 23/06/2025
+  [117] COMP PAGO EN PESOS
+  [118] 59,630
+  [119] 0
+  [120] (150,000,000.00)
+  [121] (149,999,999.92)
+  [122] 23/06/2025
+  [123] 23/06/2025
+  [124] RESCATE INMEDIATO
+  [125] 984,832
+  [126] SA$
+  [127] (13,571,420.69)
+  [128] 11.05
+  [129] 150,000,000.00
+  [130] 0.08
+  [131] 23/06/2025
+  [132] 23/06/2025
+  [133] COMP PAGO EN PESOS
+  [134] 59,795
+  [135] 0
+  [136] (26,000,000.00)
+  [137] (25,999,999.92)
+  [138] 23/06/2025
+  [139] 23/06/2025
+  [140] RESCATE INMEDIATO
+  [141] 985,011
+  [142] SA$
+  [143] (2,352,379.59)
+  [144] 11.05
+  [145] 26,000,000.00
+  [146] 0.08
+  [147] SALDO al 23/06/2025
+  [148] 0.08
+  [149] 24/06/2025
+  [150] 24/06/2025
+  [151] RECIBO EN PESOS
+  [152] 84,384
+  [153] 0
+  [154] 0.00
+  [155] 9,000,000.00
+  [156] 9,000,000.08
+  [157] 24/06/2025
+  [158] 24/06/2025
+  [159] SUSCRIPCION INMEDIATO
+  [160] 985,811
+  [161] SA$
+  [162] 813,683.26
+  [163] 11.06
+  [164] (9,000,000.00)
+  [165] 0.08
+  [166] SALDO al 24/06/2025
+  [167] 0.08
+  [168] 25/06/2025
+  [169] 25/06/2025
+  [170] COMP PAGO EN PESOS
+  [171] 60,617
+  [172] 0
+  [173] (5,000,000.00)
+  [174] (4,999,999.92)
+  [175] 25/06/2025
+  [176] 25/06/2025
+  [177] RESCATE INMEDIATO
+  [178] 986,415
+  [179] SA$
+  [180] (451,710.68)
+  [181] 11.07
+  [182] 5,000,000.00
+  [183] 0.08
+  [184] 25/06/2025
+  [185] 25/06/2025
+  [186] COMP PAGO EN PESOS
+  [187] 60,861
+  [188] 0
+  [189] (10,000,000.00)
+  [190] (9,999,999.92)
+  [191] 25/06/2025
+  [192] 25/06/2025
+  [193] RESCATE INMEDIATO
+  [194] 986,699
+  [195] SA$
+  [196] (903,421.37)
+  [197] 11.07
+  [198] 10,000,000.00
+  [199] 0.08
+  [200] SALDO al 25/06/2025
+  [201] 0.08
+  [202] 26/06/2025
+  [203] 26/06/2025
+  [204] COMP PAGO EN PESOS
+  [205] 61,218
+  [206] 0
+  [207] (57,000,000.00)
+  [208] (56,999,999.92)
+  [209] 26/06/2025
+  [210] 26/06/2025
+  [211] RESCATE INMEDIATO
+  [212] 987,385
+  [213] SA$
+  [214] (5,145,682.39)
+  [215] 11.08
+  [216] 57,000,000.00
+  [217] 0.08
+  [218] 26/06/2025
+  [219] 26/06/2025
+  [220] RECIBO EN PESOS
+  [221] 86,534
+  [222] 0
+  [223] 0.00
+  [224] 478,000,000.00
+  [225] 478,000,000.08
+  [226] 26/06/2025
+  [227] 26/06/2025
+  [228] SUSCRIPCION INMEDIATO
+  [229] 987,694
+  [230] SA$
+  [231] 43,151,512.00
+  [232] 11.08
+  [233] (478,000,000.00)
+  [234] 0.08
+  [235] SALDO al 26/06/2025
+  [236] 0.08
+  [237] 27/06/2025
+  [238] 27/06/2025
+  [239] COMP PAGO EN PESOS
+  [240] 61,952
+  [241] 0
+  [242] (14,000,000.00)
+  [243] (13,999,999.92)
+  [244] 27/06/2025
+  [245] 27/06/2025
+  [246] RESCATE INMEDIATO
+  [247] 988,495
+  [248] SA$
+  [249] (1,262,917.28)
+  [250] 11.09
+  [251] 14,000,000.00
+  [252] 0.08
+  [253] SALDO al 27/06/2025
+  [254] 0.08
+  [255] 30/06/2025
+  [256] 30/06/2025
+  [257] COMP PAGO EN PESOS
+  [258] 62,211
+  [259] 0
+  [260] (204,000,000.00)
+  [261] (203,999,999.92)
+  [262] 30/06/2025
+  [263] 30/06/2025
+  [264] RESCATE INMEDIATO
+  [265] 989,181
+  [266] SA$
+  [267] (18,361,423.01)
+  [268] 11.11
+  [269] 204,000,000.00
+  [270] 0.08
+  [271] 30/06/2025
+  [272] 30/06/2025
+  [273] COMP PAGO EN PESOS
+  [274] 62,683
+  [275] 0
+  [276] (18,000,000.00)
+  [277] (17,999,999.92)
+  [278] 30/06/2025
+  [279] 30/06/2025
+  [280] RESCATE INMEDIATO
+  [281] 989,721
+  [282] SA$
+  [283] (1,620,125.56)
+  [284] 11.11
+  [285] 18,000,000.00
+  [286] 0.08
+  [287] SALDO FINAL al 30/06/2025
+  [288] 0.08
+  [289] (*) S.E.U.O. - Salvo error u omisión
+  [290] (**) LD - Libre Disponibilidad
+  [291] (**) B  - Bloqueado
+  [292] (**) GTIA  - Garantía
+  [293] Santander Valores S.A. se encuentra inscripta ante Bolsas y Mercados Argentinos S.A. bajo el N°152. - CUIT: 33-64595126-9.
+  [294] Santander Valores S.A.
+  [295] Santander Valores S.A. Agente de Liquidación y Compensación Propio N°252 y Agente de Colocación y Distribución Integral de Fondos Comunes de Inversión N° 144 en CNV; registrada 
+  [296] en IGJ bajo Número Correlativo 6916. Domicilio: Av. Juan de Garay 151 Piso 9
+  [297] Página 3 de 7
+  [298] Conforme las reglamentaciones de los Mercados, la documentación de respaldo de cada operación se encuentra a disposición del cliente.
+  [299] Es Agente de Liquidación y Compensación Propio registrado bajo el N°252 en CNV, y Agente de Compensación y Distribución Integral de Fondos Comunes de Inversión N°144.
+  [300] Sociedad Inscripta en la IGJ el día 9/9/1991 bajo el número 6919, libro 110, tomo A de Sociedades Anónimas. 
+  [301] CATERWEST SA
+  [302] RUTA 40 KM 3451  
+  [303] 5427 - VILLA ABERASTSAN JUAN
+  [304] CUENTA COMITENTE N°
+  [305] CUIT:
+  [306] IVA:
+  [307] 8028
+  [308] 30-70737152-4
+  [309] INSC.CON PERCEPCION
+  [310] 
+
+============================================================
+PAGE 4
+============================================================
+  [000] FECHA CONC.
+  [001] FECHA LIQ.
+  [002] TIPO DE OPERACION
+  [003] N° COMP
+  [004] ESPECIE
+  [005] CANTIDAD
+  [006] PRECIO
+  [007] IMPORTE
+  [008] SALDO
+  [009] LD (**)
+  [010] SALDO INICIAL
+  [011] 0.00
+  [012] 02/06/2025
+  [013] 02/06/2025
+  [014] RECIBO EN DOLARES
+  [015] 73,489
+  [016] 0
+  [017] 0.00
+  [018] 373,452.34
+  [019] 373,452.34
+  [020] 02/06/2025
+  [021] 02/06/2025
+  [022] SUSCRIPCION INMEDIATO DOLARES
+  [023] 974,128
+  [024] SFAI
+  [025] 371,204.33
+  [026] 1.01
+  [027] (373,452.34)
+  [028] 0.00
+  [029] SALDO FINAL al 30/06/2025
+  [030] 0.00
+  [031] 03/06/2025
+  [032] 03/06/2025
+  [033] RECIBO EN DOLARES
+  [034] 74,419
+  [035] 0
+  [036] 0.00
+  [037] 26,770.52
+  [038] 26,770.52
+  [039] 03/06/2025
+  [040] 03/06/2025
+  [041] SUSCRIPCION INMEDIATO DOLARES
+  [042] 975,034
+  [043] SFAI
+  [044] 26,608.47
+  [045] 1.01
+  [046] (26,770.52)
+  [047] 0.00
+  [048] SALDO al 03/06/2025
+  [049] 0.00
+  [050] SALDO al 02/06/2025
+  [051] 0.00
+  [052] DETALLE POR FECHA DE LIQUIDACION (*)
+  [053] PERIODO:
+  [054] 01/06/2025 - 30/06/2025
+  [055] CUENTA COMITENTE EN DOLARES (*)
+  [056] (*) S.E.U.O. - Salvo error u omisión
+  [057] (**) LD - Libre Disponibilidad
+  [058] (**) B  - Bloqueado
+  [059] (**) GTIA  - Garantía
+  [060] Santander Valores S.A. se encuentra inscripta ante Bolsas y Mercados Argentinos S.A. bajo el N°152. - CUIT: 33-64595126-9.
+  [061] Santander Valores S.A.
+  [062] Santander Valores S.A. Agente de Liquidación y Compensación Propio N°252 y Agente de Colocación y Distribución Integral de Fondos Comunes de Inversión N° 144 en CNV; registrada 
+  [063] en IGJ bajo Número Correlativo 6916. Domicilio: Av. Juan de Garay 151 Piso 9
+  [064] Página 4 de 7
+  [065] Conforme las reglamentaciones de los Mercados, la documentación de respaldo de cada operación se encuentra a disposición del cliente.
+  [066] Es Agente de Liquidación y Compensación Propio registrado bajo el N°252 en CNV, y Agente de Compensación y Distribución Integral de Fondos Comunes de Inversión N°144.
+  [067] Sociedad Inscripta en la IGJ el día 9/9/1991 bajo el número 6919, libro 110, tomo A de Sociedades Anónimas. 
+  [068] CATERWEST SA
+  [069] RUTA 40 KM 3451  
+  [070] 5427 - VILLA ABERASTSAN JUAN
+  [071] CUENTA COMITENTE N°
+  [072] CUIT:
+  [073] IVA:
+  [074] 8028
+  [075] 30-70737152-4
+  [076] INSC.CON PERCEPCION
+  [077] 
+
+============================================================
+PAGE 5
+============================================================
+  [000] ESPECIE
+  [001] FECHA CONC.
+  [002] FECHA LIQ.
+  [003] TIPO DE OPERACION
+  [004] N° COMP
+  [005] CANTIDAD
+  [006] SALDO
+  [007] V. RESIDUAL
+  [008] LD (**)
+  [009] MVIJ
+  [010] SUPERGES MIX 6 CL.I PJ
+  [011] SALDO INICIAL
+  [012] 0.00
+  [013] 1.00000
+  [014] 02/06/2025
+  [015] 02/06/2025
+  [016] SUSCRIPCION T+
+  [017] 974,812
+  [018] 16,982,236.24
+  [019] 16,982,236.24
+  [020] SALDO al 02/06/2025
+  [021] 16,982,236.24
+  [022] 1.00000
+  [023] 06/06/2025
+  [024] 06/06/2025
+  [025] SUSCRIPCION T+
+  [026] 977,891
+  [027] 8,477,532.63
+  [028] 25,459,768.87
+  [029] SALDO al 06/06/2025
+  [030] 25,459,768.87
+  [031] 1.00000
+  [032] SALDO FINAL al 30/06/2025
+  [033] 25,459,768.87
+  [034] 1.00000
+  [035] SA$
+  [036] FCI SUPER AHORRO CL H $ PJ
+  [037] SALDO INICIAL
+  [038] 0.00
+  [039] 1.00000
+  [040] 02/06/2025
+  [041] 02/06/2025
+  [042] SUSCRIPCION INMEDIATO
+  [043] 974,467
+  [044] 69,828,847.66
+  [045] 69,828,847.66
+  [046] SALDO al 02/06/2025
+  [047] 69,828,847.66
+  [048] 1.00000
+  [049] 03/06/2025
+  [050] 03/06/2025
+  [051] RESCATE INMEDIATO
+  [052] 975,387
+  [053] (9,181,439.76)
+  [054] 60,647,407.90
+  [055] 03/06/2025
+  [056] 03/06/2025
+  [057] SUSCRIPCION INMEDIATO
+  [058] 975,506
+  [059] 22,769,970.60
+  [060] 83,417,378.50
+  [061] SALDO al 03/06/2025
+  [062] 83,417,378.50
+  [063] 1.00000
+  [064] 04/06/2025
+  [065] 04/06/2025
+  [066] RESCATE INMEDIATO
+  [067] 975,961
+  [068] (2,752,470.85)
+  [069] 80,664,907.65
+  [070] 04/06/2025
+  [071] 04/06/2025
+  [072] SUSCRIPCION INMEDIATO
+  [073] 976,182
+  [074] 8,349,161.57
+  [075] 89,014,069.22
+  [076] SALDO al 04/06/2025
+  [077] 89,014,069.22
+  [078] 1.00000
+  [079] 05/06/2025
+  [080] 05/06/2025
+  [081] RESCATE INMEDIATO
+  [082] 976,658
+  [083] (275,050.93)
+  [084] 88,739,018.29
+  [085] 05/06/2025
+  [086] 05/06/2025
+  [087] RESCATE INMEDIATO
+  [088] 976,671
+  [089] (275,050.93)
+  [090] 88,463,967.36
+  [091] SALDO al 05/06/2025
+  [092] 88,463,967.36
+  [093] 1.00000
+  [094] 06/06/2025
+  [095] 06/06/2025
+  [096] SUSCRIPCION INMEDIATO
+  [097] 977,538
+  [098] 4,855,757.88
+  [099] 93,319,725.24
+  [100] SALDO al 06/06/2025
+  [101] 93,319,725.24
+  [102] 1.00000
+  [103] 09/06/2025
+  [104] 09/06/2025
+  [105] SUSCRIPCION INMEDIATO
+  [106] 978,385
+  [107] 8,593,760.07
+  [108] 101,913,485.31
+  [109] SALDO al 09/06/2025
+  [110] 101,913,485.31
+  [111] 1.00000
+  [112] 10/06/2025
+  [113] 10/06/2025
+  [114] RESCATE INMEDIATO
+  [115] 979,089
+  [116] (22,382,497.14)
+  [117] 79,530,988.17
+  [118] SALDO al 10/06/2025
+  [119] 79,530,988.17
+  [120] 1.00000
+  [121] 11/06/2025
+  [122] 11/06/2025
+  [123] RESCATE INMEDIATO
+  [124] 980,100
+  [125] (1,734,523.03)
+  [126] 77,796,465.14
+  [127] SALDO al 11/06/2025
+  [128] 77,796,465.14
+  [129] 1.00000
+  [130] 13/06/2025
+  [131] 13/06/2025
+  [132] RESCATE INMEDIATO
+  [133] 981,441
+  [134] (2,187,638.29)
+  [135] 75,608,826.84
+  [136] 13/06/2025
+  [137] 13/06/2025
+  [138] SUSCRIPCION INMEDIATO
+  [139] 981,805
+  [140] 4,192,973.40
+  [141] 79,801,800.24
+  [142] SALDO al 13/06/2025
+  [143] 79,801,800.24
+  [144] 1.00000
+  [145] 17/06/2025
+  [146] 17/06/2025
+  [147] RESCATE INMEDIATO
+  [148] 982,140
+  [149] (24,538,617.19)
+  [150] 55,263,183.05
+  [151] 17/06/2025
+  [152] 17/06/2025
+  [153] SUSCRIPCION INMEDIATO
+  [154] 982,620
+  [155] 12,451,076.13
+  [156] 67,714,259.18
+  [157] SALDO al 17/06/2025
+  [158] 67,714,259.18
+  [159] 1.00000
+  [160] 18/06/2025
+  [161] 18/06/2025
+  [162] RESCATE INMEDIATO
+  [163] 983,150
+  [164] (4,994,759.14)
+  [165] 62,719,500.04
+  [166] 18/06/2025
+  [167] 18/06/2025
+  [168] SUSCRIPCION INMEDIATO
+  [169] 983,321
+  [170] 53,943,398.66
+  [171] 116,662,898.70
+  [172] SALDO al 18/06/2025
+  [173] 116,662,898.70
+  [174] 1.00000
+  [175] 19/06/2025
+  [176] 19/06/2025
+  [177] RESCATE INMEDIATO
+  [178] 984,398
+  [179] (907,433.11)
+  [180] 115,755,465.59
+  [181] 19/06/2025
+  [182] 19/06/2025
+  [183] RESCATE INMEDIATO
+  [184] 984,400
+  [185] (907,433.11)
+  [186] 114,848,032.48
+  [187] DETALLE POR FECHA DE LIQUIDACION (*)
+  [188] PERIODO:
+  [189] 01/06/2025 - 30/06/2025
+  [190] CUENTA COMITENTE EN INSTRUMENTOS (*)
+  [191] (*) S.E.U.O. - Salvo error u omisión
+  [192] (**) LD - Libre Disponibilidad
+  [193] (**) B  - Bloqueado
+  [194] (**) GTIA  - Garantía
+  [195] Santander Valores S.A. se encuentra inscripta ante Bolsas y Mercados Argentinos S.A. bajo el N°152. - CUIT: 33-64595126-9.
+  [196] Santander Valores S.A.
+  [197] Santander Valores S.A. Agente de Liquidación y Compensación Propio N°252 y Agente de Colocación y Distribución Integral de Fondos Comunes de Inversión N° 144 en CNV; registrada 
+  [198] en IGJ bajo Número Correlativo 6916. Domicilio: Av. Juan de Garay 151 Piso 9
+  [199] Página 5 de 7
+  [200] Conforme las reglamentaciones de los Mercados, la documentación de respaldo de cada operación se encuentra a disposición del cliente.
+  [201] Es Agente de Liquidación y Compensación Propio registrado bajo el N°252 en CNV, y Agente de Compensación y Distribución Integral de Fondos Comunes de Inversión N°144.
+  [202] Sociedad Inscripta en la IGJ el día 9/9/1991 bajo el número 6919, libro 110, tomo A de Sociedades Anónimas. 
+  [203] CATERWEST SA
+  [204] RUTA 40 KM 3451  
+  [205] 5427 - VILLA ABERASTSAN JUAN
+  [206] CUENTA COMITENTE N°
+  [207] CUIT:
+  [208] IVA:
+  [209] 8028
+  [210] 30-70737152-4
+  [211] INSC.CON PERCEPCION
+  [212] 
+
+============================================================
+PAGE 6
+============================================================
+  [000] ESPECIE
+  [001] FECHA CONC.
+  [002] FECHA LIQ.
+  [003] TIPO DE OPERACION
+  [004] N° COMP
+  [005] CANTIDAD
+  [006] SALDO
+  [007] V. RESIDUAL
+  [008] SALDO al 19/06/2025
+  [009] 114,848,032.48
+  [010] 1.00000
+  [011] 23/06/2025
+  [012] 23/06/2025
+  [013] RESCATE INMEDIATO
+  [014] 984,832
+  [015] (13,571,420.69)
+  [016] 101,276,611.80
+  [017] 23/06/2025
+  [018] 23/06/2025
+  [019] RESCATE INMEDIATO
+  [020] 985,011
+  [021] (2,352,379.59)
+  [022] 98,924,232.21
+  [023] SALDO al 23/06/2025
+  [024] 98,924,232.21
+  [025] 1.00000
+  [026] 24/06/2025
+  [027] 24/06/2025
+  [028] SUSCRIPCION INMEDIATO
+  [029] 985,811
+  [030] 813,683.26
+  [031] 99,737,915.47
+  [032] SALDO al 24/06/2025
+  [033] 99,737,915.47
+  [034] 1.00000
+  [035] 25/06/2025
+  [036] 25/06/2025
+  [037] RESCATE INMEDIATO
+  [038] 986,415
+  [039] (451,710.68)
+  [040] 99,286,204.79
+  [041] 25/06/2025
+  [042] 25/06/2025
+  [043] RESCATE INMEDIATO
+  [044] 986,699
+  [045] (903,421.37)
+  [046] 98,382,783.42
+  [047] SALDO al 25/06/2025
+  [048] 98,382,783.42
+  [049] 1.00000
+  [050] 26/06/2025
+  [051] 26/06/2025
+  [052] RESCATE INMEDIATO
+  [053] 987,385
+  [054] (5,145,682.39)
+  [055] 93,237,101.03
+  [056] 26/06/2025
+  [057] 26/06/2025
+  [058] SUSCRIPCION INMEDIATO
+  [059] 987,694
+  [060] 43,151,512.00
+  [061] 136,388,613.03
+  [062] SALDO al 26/06/2025
+  [063] 136,388,613.03
+  [064] 1.00000
+  [065] 27/06/2025
+  [066] 27/06/2025
+  [067] RESCATE INMEDIATO
+  [068] 988,495
+  [069] (1,262,917.28)
+  [070] 135,125,695.75
+  [071] SALDO al 27/06/2025
+  [072] 135,125,695.75
+  [073] 1.00000
+  [074] 30/06/2025
+  [075] 30/06/2025
+  [076] RESCATE INMEDIATO
+  [077] 989,181
+  [078] (18,361,423.01)
+  [079] 116,764,272.74
+  [080] 30/06/2025
+  [081] 30/06/2025
+  [082] RESCATE INMEDIATO
+  [083] 989,721
+  [084] (1,620,125.56)
+  [085] 115,144,147.18
+  [086] SALDO FINAL al 30/06/2025
+  [087] 115,144,147.18
+  [088] 1.00000
+  [089] SFAI
+  [090] FCI SUPERFONDO AHORRO USD CL.
+  [091] SALDO INICIAL
+  [092] 0.00
+  [093] 1.00000
+  [094] 02/06/2025
+  [095] 02/06/2025
+  [096] SUSCRIPCION INMEDIATO DOLARES
+  [097] 974,128
+  [098] 371,204.33
+  [099] 371,204.33
+  [100] SALDO al 02/06/2025
+  [101] 371,204.33
+  [102] 1.00000
+  [103] 03/06/2025
+  [104] 03/06/2025
+  [105] SUSCRIPCION INMEDIATO DOLARES
+  [106] 975,034
+  [107] 26,608.47
+  [108] 397,812.80
+  [109] SALDO al 03/06/2025
+  [110] 397,812.80
+  [111] 1.00000
+  [112] SALDO FINAL al 30/06/2025
+  [113] 397,812.80
+  [114] 1.00000
+  [115] (*) S.E.U.O. - Salvo error u omisión
+  [116] (**) LD - Libre Disponibilidad
+  [117] (**) B  - Bloqueado
+  [118] (**) GTIA  - Garantía
+  [119] Santander Valores S.A. se encuentra inscripta ante Bolsas y Mercados Argentinos S.A. bajo el N°152. - CUIT: 33-64595126-9.
+  [120] Santander Valores S.A.
+  [121] Santander Valores S.A. Agente de Liquidación y Compensación Propio N°252 y Agente de Colocación y Distribución Integral de Fondos Comunes de Inversión N° 144 en CNV; registrada 
+  [122] en IGJ bajo Número Correlativo 6916. Domicilio: Av. Juan de Garay 151 Piso 9
+  [123] Página 6 de 7
+  [124] Conforme las reglamentaciones de los Mercados, la documentación de respaldo de cada operación se encuentra a disposición del cliente.
+  [125] Es Agente de Liquidación y Compensación Propio registrado bajo el N°252 en CNV, y Agente de Compensación y Distribución Integral de Fondos Comunes de Inversión N°144.
+  [126] Sociedad Inscripta en la IGJ el día 9/9/1991 bajo el número 6919, libro 110, tomo A de Sociedades Anónimas. 
+  [127] CATERWEST SA
+  [128] RUTA 40 KM 3451  
+  [129] 5427 - VILLA ABERASTSAN JUAN
+  [130] CUENTA COMITENTE N°
+  [131] CUIT:
+  [132] IVA:
+  [133] 8028
+  [134] 30-70737152-4
+  [135] INSC.CON PERCEPCION
+  [136] 

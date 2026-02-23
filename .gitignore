@@ -1,0 +1,35 @@
+# Ignore data folders to prevent leaking financial/client data
+Input/
+Output/
+data/
+
+# Identify python specific files to ignore
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# Sensitive Credentials
+credenciales_drive.json
+
+# Global Data File Blocks (Prevent any accidental leaks)
+*.xlsx
+*.xls
+*.csv
+*.pdf
+*.json

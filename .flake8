@@ -1,0 +1,27 @@
+[flake8]
+# Ignore formatting and stylistic rules (handled by black or user preference)
+ignore = 
+    E1, E2, E3, E4, E5, E7, W1, W2, W3, W5,
+    # specifically E501 is line too long
+    E501
+
+# Focus exactly on real bugs:
+# F401: module imported but unused
+# F403: 'from module import *' used; unable to detect undefined names
+# F405: name may be undefined, or defined from star imports
+# F821: undefined name
+# F822: undefined name in __all__
+# F823: local variable name ... referenced before assignment
+# F831: duplicate argument name in function definition
+# F841: local variable name is assigned to but never used
+select = F4, F8
+
+# Files to exclude from linting entirely
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    env,
+    .agent,
+    .agents
