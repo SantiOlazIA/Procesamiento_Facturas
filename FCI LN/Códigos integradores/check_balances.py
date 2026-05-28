@@ -4,7 +4,7 @@ import os
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_PATH = os.path.join(SCRIPT_DIR, 'movements.json')
 # Hardcoded initial balance from prepare_test.py
-INITIAL_CP = 5909501.57
+INITIAL_CP = 1875384.72
 INITIAL_AMT = 685714581.66 
 
 def get_final_balances():

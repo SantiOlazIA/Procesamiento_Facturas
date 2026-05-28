@@ -61,8 +61,12 @@ def extract_all():
         file_y = 0
         try:
             nums = re.findall(r'\d+', fname)
-            if len(nums) == 2: file_y = int(nums[0]) + 2000
-            elif len(nums) == 3: file_y = int(nums[2]) + 2000
+            if len(nums) == 2: 
+                base_y = int(nums[0])
+                file_y = base_y + 2000 if base_y < 100 else base_y
+            elif len(nums) == 3: 
+                base_y = int(nums[2])
+                file_y = base_y + 2000 if base_y < 100 else base_y
         except: pass
 
         log.info(f"  Leyendo: {fname}")

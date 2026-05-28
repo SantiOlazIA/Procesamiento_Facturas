@@ -79,9 +79,9 @@ def extract_all_funds():
                 if page_text:
                     full_text += page_text + "\n"
 
-            comps_map, debitos_map = _extract_comprobantes(full_text)
+            comps_map, debitos_map, rescates_map = _extract_comprobantes(full_text)
             _extract_instrument_movements(
-                full_text, fname, all_funds, initial_balances, comps_map, debitos_map
+                full_text, fname, all_funds, initial_balances, comps_map, debitos_map, rescates_map
             )
             _extract_portfolio_balances(full_text, fname, portfolio_cps)
 
@@ -90,6 +90,27 @@ def extract_all_funds():
             log.error(f"    ERROR procesando {fname}: {e}")
             errors.append(error_msg)
             continue
+
+    # Normalize portfolio using the last Santander Valores PDF as ground truth.
+    # When a fund reaches 0 balance it won't appear in that PDF's portfolio section,
+    # but older PDFs may have left a stale non-zero value in portfolio_cps.
+    # Fix: re-extract the final portfolio and set missing funds to 0.
+    santander_pdfs = [f for f in pdf_files if 'santander' in f.lower()]
+    if santander_pdfs:
+        last_fpath = os.path.join(INPUT_PDF_DIR, santander_pdfs[-1])
+        try:
+            reader = PdfReader(last_fpath)
+            last_text = "\n".join(
+                (p.extract_text() or "") for p in reader.pages
+            )
+            final_portfolio = {}
+            _extract_portfolio_balances(last_text, santander_pdfs[-1], final_portfolio)
+            for fund_name in list(portfolio_cps):
+                if fund_name not in final_portfolio:
+                    portfolio_cps[fund_name] = 0.0  # Fully redeemed — not in last portfolio
+            portfolio_cps.update(final_portfolio)
+        except Exception as e:
+            log.warning(f"No se pudo normalizar portfolio con ultimo PDF: {e}")
 
     # Clean old movement files
     old_files = glob.glob(os.path.join(SCRIPT_DIR, 'movements_*.json'))
@@ -185,13 +206,16 @@ def _fix_balance_drift(movements, initial_balance, fund_name):
 
 
 def _extract_comprobantes(full_text):
-    """Scan the full text (PESOS section) to map Nro Comp to Importe and collect Debitos."""
+    """Scan the full text (PESOS section) to map Nro Comp to Importe and collect Debitos/Rescates."""
     lines = full_text.split('\n')
     date_re = re.compile(r'^\d{2}/\d{2}/\d{4}$')
     op_prefixes = ('SUSCRIPCION', 'RESCATE')
+    # Standard rescate op names that appear in the instruments section directly
+    _STANDARD_RESCATES = {'RESCATE INMEDIATO', 'RESCATE T+', 'RESCATE INMEDIATO DOLARES'}
     comps = {}
-    debitos = {}  # key: (date_liq, especie), value: list of importes
-    
+    debitos = {}   # key: (date_liq, especie), value: list of importes  — T+ suscripciones
+    rescates = {}  # key: (date_liq, especie), value: list of importes  — non-standard rescates
+
     i = 0
     while i < len(lines):
         line = lines[i].strip()
@@ -199,8 +223,8 @@ def _extract_comprobantes(full_text):
             if i + 7 < len(lines):
                 date_liq = lines[i+1].strip()
                 op_line = lines[i+2].strip()
-                
-                # Check for RESCATE or SUSCRIPCION INMEDIATO
+
+                # Check for RESCATE or SUSCRIPCION operations
                 if any(op_line.startswith(prefix) for prefix in op_prefixes):
                     if date_re.match(date_liq):
                         nro_comp = lines[i+3].strip()
@@ -210,15 +234,23 @@ def _extract_comprobantes(full_text):
                             is_number = True
                         except ValueError:
                             is_number = False
-                            
+
                         if not is_number:
                             importe_str = lines[i+7].strip()
                             try:
                                 importe = abs(clean_number(importe_str))
                                 comps[nro_comp] = importe
+                                # Non-standard rescates (e.g. RESCATE 24 HS) don't appear in
+                                # the instruments section by nro_comp — store by date+especie
+                                # so DEBITO DE TITULOS POR RESCATE DE FONDOS can look them up.
+                                if op_line.startswith('RESCATE') and op_line not in _STANDARD_RESCATES:
+                                    key = (date_liq, especie_str)
+                                    if key not in rescates:
+                                        rescates[key] = []
+                                    rescates[key].append(importe)
                             except ValueError:
                                 pass
-                                
+
                 # Check for DEBITO POR SUSCRIPCION (For T+ subscriptions)
                 if 'DEBITO' in op_line and 'SUSCRIPCION' in op_line:
                     especie_str = lines[i+4].strip()
@@ -232,11 +264,12 @@ def _extract_comprobantes(full_text):
                     except ValueError:
                         pass
         i += 1
-    return comps, debitos
+    return comps, debitos, rescates
 
 
 def _extract_instrument_movements(
-    full_text, source_file, all_funds, initial_balances, comps_map, debitos_map
+    full_text, source_file, all_funds, initial_balances, comps_map, debitos_map,
+    rescates_map=None,
 ):
     """Parse the 'CUENTA COMITENTE EN INSTRUMENTOS' section for CP movements."""
     lines = full_text.split('\n')
@@ -244,8 +277,11 @@ def _extract_instrument_movements(
     op_types = {
         'SUSCRIPCION INMEDIATO': 'SUSCRIPCION',
         'SUSCRIPCION T+': 'SUSCRIPCION',
+        'SUSCRIPCION INMEDIATO DOLARES': 'SUSCRIPCION',  # SFAI USD fund
         'RESCATE INMEDIATO': 'RESCATE',
         'RESCATE T+': 'RESCATE',
+        'RESCATE INMEDIATO DOLARES': 'RESCATE',          # SFAI USD fund
+        'DEBITO DE TITULOS POR RESCATE DE FONDOS': 'RESCATE',  # MVIJ 24-hs rescate
     }
 
     current_fund = None
@@ -256,14 +292,18 @@ def _extract_instrument_movements(
         line = lines[i].strip()
 
         # Detect fund name: lines starting with "FCI " or "SUPERGES "
+        # Guard: only enter a fund section when SALDO INICIAL follows within 2 lines.
+        # This prevents false detection on summary/portfolio pages where fund names also
+        # appear but are followed by balance amounts, not SALDO INICIAL.
         if line.startswith('FCI ') or line.startswith('SUPERGES '):
-            current_fund = line
-            # The especie (e.g. SA$) is typically on the line prior
-            if i > 0:
-                current_especie = lines[i-1].strip()
-                
-            if current_fund not in all_funds:
-                all_funds[current_fund] = []
+            window = [lines[j].strip() for j in range(i + 1, min(i + 3, len(lines)))]
+            if 'SALDO INICIAL' in window:
+                current_fund = line
+                # The especie code (e.g. SA$) is typically on the line prior
+                if i > 0:
+                    current_especie = lines[i - 1].strip()
+                if current_fund not in all_funds:
+                    all_funds[current_fund] = []
             i += 1
             continue
 
@@ -291,14 +331,27 @@ def _extract_instrument_movements(
 
                 if op_line in op_types and date_re.match(date_liq):
                     try:
-                        cantidad = clean_number(cantidad_str)
+                        # Dollar-section operations (e.g. SFAI) insert the especie code
+                        # between nro_comp and cantidad, so try i+4 first, fall back to i+5.
+                        try:
+                            cantidad = clean_number(cantidad_str)
+                        except ValueError:
+                            cantidad = clean_number(lines[i + 5].strip())
+
                         importe = comps_map.get(nro_comp)
-                        
-                        # Fallback for SUSCRIPCION T+ which doesn't have a direct nro_comp mapping in Pesos
+
+                        # Fallback for SUSCRIPCION T+ (no direct nro_comp in pesos section)
                         if importe is None and op_types.get(op_line) == 'SUSCRIPCION':
                             key = (date_liq, current_especie)
                             if key in debitos_map and debitos_map[key]:
                                 importe = debitos_map[key].pop(0)  # Consume chronologically
+
+                        # Fallback for DEBITO DE TITULOS POR RESCATE DE FONDOS
+                        # (nro_comp in instruments != nro_comp in pesos; match by date+especie)
+                        if importe is None and op_types.get(op_line) == 'RESCATE' and rescates_map:
+                            key = (date_liq, current_especie)
+                            if key in rescates_map and rescates_map[key]:
+                                importe = rescates_map[key].pop(0)
 
                         if importe is None:
                             log.warning(

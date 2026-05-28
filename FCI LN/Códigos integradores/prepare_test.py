@@ -110,9 +110,9 @@ def prepare():
     else:
         # Fallback (Manual override or error) - hardcoded from inspection if PDF read fails
         log.warning("  Usando valores hardcodeados de respaldo (Inspeccion previa)")
-        initial_date = datetime.datetime(2024, 10, 1)
-        initial_cp = 5909501.57
-        initial_amount = 685714581.66
+        initial_date = datetime.datetime(2025, 10, 1)
+        initial_cp = 1875384.72
+        initial_amount = 295931900.00
     
     initial_price = initial_amount / initial_cp if initial_cp > 0 else 0
 

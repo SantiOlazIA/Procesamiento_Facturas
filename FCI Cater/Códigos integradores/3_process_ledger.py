@@ -138,6 +138,18 @@ def process_ledger():
         initial_balance = 0.0
         fund_label = 'Santander'
 
+    upper_fund = fund_label.upper()
+    if 'MIX 6' in upper_fund:
+        asset_account = '10204-012'
+    elif 'PLUS' in upper_fund:
+        asset_account = '10204-001'
+    elif 'AHORRO' in upper_fund:
+        asset_account = '10204-011'
+    else:
+        asset_account = '10201-001'
+
+    pnl_account = '40306-000'
+
     # Inject initial balance as a synthetic first SUSCRIPCION
     # so FIFO has CPs to consume for rescates
     all_movs = []
@@ -231,7 +243,7 @@ def process_ledger():
             r_a = current_asiento_row
             ws[f'D{r_a}'] = f'=+W{r_c}'; ws[f'D{r_a}'].number_format = 'DD/MM/YYYY'
             ws[f'N{r_a}'] = f'=+X{r_c}'
-            ws[f'B{r_a+1}'] = '10201-1'; ws[f'C{r_a+1}'] = f'Fondo Comun de Inv Santander'; ws[f'G{r_a+1}'] = f'=ROUND(AB{r_c}, 2)'
+            ws[f'B{r_a+1}'] = asset_account; ws[f'C{r_a+1}'] = f'{fund_label}'; ws[f'G{r_a+1}'] = f'=ROUND(AB{r_c}, 2)'
             ws[f'B{r_a+2}'] = '10101'; ws[f'D{r_a+2}'] = 'Caja Banco'; ws[f'H{r_a+2}'] = f'=ROUND(AB{r_c}, 2)'
             ws[f'C{r_a+3}'] = f'Suscripcion cuotas partes {fund_label}'
             
@@ -286,8 +298,8 @@ def process_ledger():
                 ws[f'I{r_a}'] = f'=AA{r_c}'; ws[f'L{r_a}'] = f'=H{r_a+3}'; ws[f'K{r_a}'] = f'=L{r_a}/(-Z{r_c})'; ws[f'J{r_a}'] = f'=K{r_a}-I{r_a}'; ws[f'M{r_a}'] = f'=L{r_a}-H{r_a+3}'
                 
                 ws[f'B{r_a+1}'] = '10101'; ws[f'C{r_a+1}'] = 'Caja Banco'; ws[f'G{r_a+1}'] = f'=ROUND(-AB{r_c}, 2)'
-                ws[f'B{r_a+2}'] = '10201-1'; ws[f'D{r_a+2}'] = 'Fondo Comun de Inv Santander'; ws[f'H{r_a+2}'] = f'=ROUND(-Z{r_c}*{sub["price_cell"]}, 2)'
-                ws[f'B{r_a+3}'] = '40203-1'; ws[f'D{r_a+3}'] = 'Rentas FCI Santander'; ws[f'H{r_a+3}'] = f'=ROUND(G{r_a+1}-H{r_a+2}, 2)'
+                ws[f'B{r_a+2}'] = asset_account; ws[f'D{r_a+2}'] = f'{fund_label}'; ws[f'H{r_a+2}'] = f'=ROUND(-Z{r_c}*{sub["price_cell"]}, 2)'
+                ws[f'B{r_a+3}'] = pnl_account; ws[f'D{r_a+3}'] = f'Rentas {fund_label}'; ws[f'H{r_a+3}'] = f'=ROUND(G{r_a+1}-H{r_a+2}, 2)'
                 ws[f'C{r_a+4}'] = f'Rescate cuotas partes de {fund_label}'
                 
                 apply_rescue_borders(ws, r_a)
